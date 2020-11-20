@@ -63,7 +63,6 @@ ul{
 
 li{
     list-style: none;
-    
 }
 
 button{
@@ -110,6 +109,10 @@ p{
     align-items: center;
     color: var(--color-white);
     padding: 16px;
+}
+
+.nav_name{
+    color: var(--color-dark-white);
 }
 
 .navbar__menu{
@@ -405,3 +408,36 @@ background-color: var(--color-light-orange);
 
 .testimonial__speeach-bubble a{
     color: var(--color-dark-orange);
+}
+
+/* Contact */
+
+
+
+.contact__title,
+.contact__email,
+.contact__rights {
+    color: var(--color-dark-blue);
+}
+.contact__title{
+    margin:32px 0;
+}
+
+.contact__links{
+    font-size: var(--font-large);
+    color: var(--color-dark-blue);
+    margin: 24px 0;
+}
+.fab i{
+    color: var(--color-dark-blue);
+    transition: all var(--animation-duration) ease-in;
+}
+
+.fab:hover{
+    transform: scale(1.1);
+    color: var(--color-dark-purple);
+}
+
+.fab {
+    color: var(--color-dark-blue);
+}
