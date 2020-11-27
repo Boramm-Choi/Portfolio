@@ -103,12 +103,20 @@ p{
 
 /* Nav Bar */
 #navbar{
+    position: fixed;
     display: flex;
+    width: 100%;
     justify-content: space-between;
-    background-color: var(--color-light-orange);
+    background-color: transparent;
     align-items: center;
     color: var(--color-white);
     padding: 16px;
+    transition: all var(--animation-duration) ease-in-out;
+}
+
+#navbar.navbar--dark{
+    background-color: var(--color-dark-orange);
+    padding: 8px;
 }
 
 .nav_name{
@@ -151,6 +159,7 @@ border: 1px solid var(--color-white);
 #Home{
     background: url("imgs/backgroud.png") center/cover no-repeat;
     padding: 40px;
+    padding-top:120px;
     text-align: center;
 }
 
