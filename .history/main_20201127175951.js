@@ -20,18 +20,15 @@ const link= target.dataset.link;
 if( link==null){
     return;
 }
-scrollIntoView(link);
+console.log(event.target.dataset.link);
+const scrollTo=document.querySelector(link);
+scrollTo.scrollIntoView({behavior:'smooth'});
 });   
 
 //handle scrolling when tapping on contact me button
 
 const homeContactBtn= document.querySelector('.home_contact');
 homeContactBtn.addEventListener('click', ()=>{
-scrollIntoView('#Contact');
+const scrollTo= document.querySelector('#Contact');
+scrollTo.scrollIntoView({behavior:'smooth'});
 });
-
-
-function scrollIntoView(selector){
-const scrollTo= document.querySelector(selector);
-scrollTo.scrollIntoView({behavior:'smooth'});   
-}
