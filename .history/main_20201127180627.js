@@ -31,10 +31,10 @@ scrollIntoView('#Contact');
 });
 
 //fadding home slowly to transparent as scrolls down
-const home= document.querySelector('.home__container');
+const home= document.querySelector('#Home');
 const homeHeight= home.getBoundingClientRect().height;
 document.addEventListener('scroll', ()=> {
-home.style.opacity= 1- window.scrollY / homeHeight;
+    console.log(homeHeight);
 })
 
 
